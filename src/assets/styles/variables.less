@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+//& theme-variables
+/*
+  仅供参考  basic px is 16px
+  us (Super Small)   4px 0.25x
+  xs (Extra Small)   8px 0.50x
+  sm (Small)    12px 0.75x
+  md (Medium)   16px 1x
+  lg (Large)   20px 1.25x
+  xl (Extra Large)   24px 1.50x
+  ul (Super Large)   28px 1.75x
+*/
+:root {
+  //& color variables
+  //! basic-color
+  // rgba
+  --color-primary_1: rgba(109, 97, 248, 1);
+  --color-primary_2: rgba(124, 130, 248, 1);
+  // num
+  --color-primary_1--num: 109, 97, 248;
+  --color-primary_2--num: 124, 130, 248;
+
+  //! text
+  // rgba
+  --text-primary: rgba(249, 250, 251, 1);
+  --text-secondary: rgba(173, 181, 189, 1);
+  // num
+  --text-primary--num: 249, 250, 251;
+  --text-secondary--num: 173, 181, 189;
+
+  //! bg
+  // rgba
+  --bg-primary_1: rgba(16, 18, 27, 0.4);
+  --bg-primary_2: rgba(12, 15, 25, 0.3);
+  --bg-secondary_1: rgba(39, 39, 39, 1);
+  --bg-secondary_2: rgba(20, 22, 43, 1);
+  // num
+  --bg-primary_1--num: 16, 18, 27;
+  --bg-primary_2--num: 12, 15, 25;
+  --bg-secondary_1--num: 39, 39, 39;
+  --bg-secondary_2--num: 20, 22, 43;
+
+  //! border
+  // rgba
+  --boder-primary_1: rgba(255, 255, 255, 0.1);
+  --boder-secondary_1: rgba(248, 249, 250, 0.5);
+  // num
+  --boder-primary_1--num: 255, 255, 255;
+  --boder-secondary_1--num: 248, 249, 250;
+
+  //& zise variables
+  // space
+  --space-us: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-ul: 28px;
+  --space-2ul: 32px;
+  // text
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-ul: 22px;
+  --text-2ul: 24px;
+  --text-3ul: 32px;
+  // size
+  --size-us: 4px;
+  --size-xs: 8px;
+  --size-sm: 12px;
+  --size-md: 16px;
+  --size-lg: 20px;
+  --size-xl: 24px;
+  --size-ul: 28px;
+  // rounde
+  --rounded-xs: 2px;
+  --rounded-sm: 4px;
+  --rounded-md: 6px;
+  --rounded-lg: 8px;
+  --rounded-xl: 12px;
+  --rounded-ul: 16px;
+  --rounded-2ul: 24px;
+  --rounded-full: 9999px;
+  // buffer
+  --buffer-200ms: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --buffer-500ms: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --buffer-timifunc: cubic-bezier(0.4, 0, 0.2, 1);
+
+  //! other variables
+  --shadow-primary_1: rgba(134, 140, 160, 0.5);
+  --shadow-primary_1--num: 134, 140, 160;
+  --body-font: 'Poppins', 'Hiragino Sans GB', '微软雅黑', 'Microsoft YaHei',
+    'Heiti SC';
+  --entity-color-gradient: linear-gradient(
+    270deg,
+    var(--color-primary_2) 0%,
+    var(--color-primary_2) 26%,
+    var(--color-primary_1) 99%
+  );
+}
+
+//& less-variables
+.use-tsn-eio(@time) {
+  transition: all @time ease-in-out;
+}
